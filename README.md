@@ -1,11 +1,11 @@
-# multiling_jd060
+# long_context_positional_extrapolation_segmenter
 
 **把多语言模型工程师·长上下文的位置编码外推切成可核查的片段并标出关键位置。**
 
-`multiling_jd060` —— 把输入按语义边界切成独立单元，逐单元核对多语言模型工程师·长上下文的位置编码外推相关的特征并标出命中位置
+`long_context_positional_extrapolation_segmenter` —— 把输入按语义边界切成独立单元，逐单元核对多语言模型工程师·长上下文的位置编码外推相关的特征并标出命中位置
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`multiling_jd060.py` 拷走就能用
+- 单文件，`long_context_positional_extrapolation_segmenter.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install cdolf-multiling_jd060
+pip install cdolf-long_context_positional_extrapolation_segmenter
 ```
 
 装完直接用命令名调用：
 
 ```bash
-multiling_jd060 --help
+long_context_positional_extrapolation_segmenter --help
 ```
 
-也可以不用安装，直接把 `multiling_jd060.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `long_context_positional_extrapolation_segmenter.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ multiling_jd060 --help
 ## 用法
 
 ```bash
-python multiling_jd060.py --file input.txt
-python multiling_jd060.py --text "示例内容"
-python multiling_jd060.py --file input.txt --json
+python long_context_positional_extrapolation_segmenter.py --file input.txt
+python long_context_positional_extrapolation_segmenter.py --text "示例内容"
+python long_context_positional_extrapolation_segmenter.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python multiling_jd060.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_multiling_jd060.py
+python test_long_context_positional_extrapolation_segmenter.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_multiling_jd060.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/cdolf/multiling_jd060>
+- GitHub 仓库：<https://github.com/cdolf/long_context_positional_extrapolation_segmenter>
 
 ---
 
@@ -79,7 +79,7 @@ python test_multiling_jd060.py
 cdolf 做多语言模型工程师·长上下文的位置编码外推相关的问题，方向对标京东的初级多语言模型工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://cdolf.github.io>
-- 仓库：<https://github.com/cdolf/multiling_jd060>
+- 仓库：<https://github.com/cdolf/long_context_positional_extrapolation_segmenter>
 
 ## 许可
 

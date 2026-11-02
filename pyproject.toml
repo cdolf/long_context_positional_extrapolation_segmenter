@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cdolf-multiling_jd060"
+name = "cdolf-long_context_positional_extrapolation_segmenter"
 version = "0.1.0"
 description = "把输入按语义边界切成独立单元，逐单元核对多语言模型工程师·长上下文的位置编码外推相关的特征并标出命中位置"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://cdolf.github.io"
-Repository = "https://github.com/cdolf/multiling_jd060"
-Issues = "https://github.com/cdolf/multiling_jd060/issues"
+Repository = "https://github.com/cdolf/long_context_positional_extrapolation_segmenter"
+Issues = "https://github.com/cdolf/long_context_positional_extrapolation_segmenter/issues"
 
 [project.scripts]
-multiling_jd060 = "multiling_jd060:main"
+long_context_positional_extrapolation_segmenter = "long_context_positional_extrapolation_segmenter:main"
 
 [tool.setuptools]
-py-modules = ["multiling_jd060"]
+py-modules = ["long_context_positional_extrapolation_segmenter"]
